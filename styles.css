@@ -102,3 +102,42 @@ body {
   .hero h1 { font-size: 2rem; }
   .hero p { font-size: 1rem; }
 }
+/* Brand colors */
+:root {
+  --color-primary: #0062cc;    /* Replace with your blue */
+  --color-secondary: #00d1ff;  /* A secondary accent */
+}
+
+/* Hero background gradient & text styling */
+.hero {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  color: #fff;
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+/* Logo size & spacing */
+.logo {
+  max-width: 180px;
+  margin: 0 auto 1.5rem;
+  display: block;
+}
+
+/* Download buttons layout */
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.download-buttons img {
+  max-width: 160px;
+  transition: transform 0.2s;
+}
+.download-buttons img:hover {
+  transform: translateY(-4px);
+}
