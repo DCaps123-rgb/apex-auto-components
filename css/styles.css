@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+    color: #d4f1f4;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background: #1a2930;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth-links a {
+    color: #00d7ff;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4em 1em;
+}
+
+.hero h1, .why-apex h2 {
+    color: #00d7ff;
+}
+
+.store-links a {
+    margin: 0.5em;
+    padding: 0.8em 1.5em;
+    background: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.store-links a:hover {
+    background: #0097a7;
+}
+
+/* Why Apex */
+.why-apex {
+    text-align: center;
+    padding: 2em;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.feature-card {
+    background: #1e3747;
+    padding: 1.5em;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.feature-card h3 {
+    color: #00d7ff;
+}
+
+/* Footer */
+footer {
+    background: #1a2930;
+    text-align: center;
+    padding: 1.5em;
+}
+
+footer p, footer a {
+    color: #a8d0db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #00d7ff;
+}
