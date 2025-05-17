@@ -8,47 +8,68 @@ body {
 /* Header */
 header {
     background: #1a2930;
-    padding: 1em 2em;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.logo-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
-.auth-links a {
+.logo {
+    height: 80px;
+}
+
+.site-title {
+    font-size: 1.8em;
     color: #00d7ff;
-    text-decoration: none;
 }
 
-.auth-links a:hover {
-    color: #fff;
+.auth-link {
+    color: #00d7ff;
+    margin-left: auto;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 4em 1em;
+    padding: 3em 1em;
 }
 
-.hero h1, .why-apex h2 {
+.hero h1 {
+    font-size: 2.2em;
     color: #00d7ff;
 }
 
-.store-links a {
-    margin: 0.5em;
+.store-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1em;
+}
+
+.store-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     padding: 0.8em 1.5em;
     background: #00bcd4;
     color: #fff;
+    border-radius: 8px;
     text-decoration: none;
-    border-radius: 5px;
 }
 
-.store-links a:hover {
+.store-btn:hover {
     background: #0097a7;
 }
 
-/* Why Apex */
+/* Why Apex Section */
 .why-apex {
+    padding: 2em 1em;
     text-align: center;
-    padding: 2em;
 }
 
 .features {
@@ -61,11 +82,9 @@ header {
     background: #1e3747;
     padding: 1.5em;
     border-radius: 8px;
-    max-width: 300px;
-}
-
-.feature-card h3 {
-    color: #00d7ff;
+    width: 250px;
+    text-align: center;
+    color: #d4f1f4;
 }
 
 /* Footer */
