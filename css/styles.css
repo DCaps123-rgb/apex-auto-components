@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
@@ -118,4 +119,3 @@ footer a {
 footer a:hover {
     color: #00bcd4;
 }
-
