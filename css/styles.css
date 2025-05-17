@@ -9,28 +9,28 @@ body {
 header {
     background: #1a2930;
     padding: 1.5em;
-    text-align: center;
 }
 
-.logo-container {
+.navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-icon {
+    font-size: 1.8em;
+    color: #00d7ff;
 }
 
 .logo {
     height: 80px;
 }
 
-.site-title {
-    font-size: 1.8em;
-    color: #00d7ff;
-}
-
 .auth-link {
     color: #00d7ff;
-    margin-left: auto;
+    text-decoration: none;
 }
 
 /* Hero Section */
@@ -44,22 +44,28 @@ header {
     color: #00d7ff;
 }
 
+.subheading {
+    font-size: 1.2em;
+    color: #00bcd4;
+    margin: 0.5em 0;
+}
+
 .store-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     margin-top: 1em;
 }
 
 .store-btn {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 8px;
     padding: 0.8em 1.5em;
     background: #00bcd4;
     color: #fff;
-    border-radius: 8px;
     text-decoration: none;
+    border-radius: 8px;
 }
 
 .store-btn:hover {
@@ -68,14 +74,15 @@ header {
 
 /* Why Apex Section */
 .why-apex {
-    padding: 2em 1em;
     text-align: center;
+    padding: 2em 1em;
 }
 
 .features {
     display: flex;
     justify-content: center;
     gap: 2em;
+    margin: 1em 0;
 }
 
 .feature-card {
@@ -84,7 +91,12 @@ header {
     border-radius: 8px;
     width: 250px;
     text-align: center;
-    color: #d4f1f4;
+}
+
+.feature-icon {
+    font-size: 2.5em;
+    color: #00d7ff;
+    margin-bottom: 0.5em;
 }
 
 /* Footer */
@@ -94,11 +106,16 @@ footer {
     padding: 1.5em;
 }
 
-footer p, footer a {
-    color: #a8d0db;
+footer p {
+    margin: 0.5em 0;
+}
+
+footer a {
+    color: #00d7ff;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #00d7ff;
+    color: #00bcd4;
 }
+

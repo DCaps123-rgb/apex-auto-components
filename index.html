@@ -4,34 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex Auto Components - Download App</title>
+    <title>Apex Auto Components</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <div class="logo-container">
-            <img src="assets/logo.png" alt="Apex Auto Components" class="logo">
-            <span class="site-title">Apex Auto Components</span>
+        <nav class="navbar">
+            <div class="logo-container">
+                <div class="menu-icon"><i class="fas fa-bars"></i></div>
+                <img src="assets/logo.png" alt="Apex Auto Components" class="logo">
+            </div>
             <a href="#" class="auth-link">Sign In / Register</a>
-        </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
     <main>
         <section class="hero">
             <h1>Get the Official Apex Auto Components App</h1>
-            <p>Download for Android, IOS or Windows</p>
+            <p class="subheading">Download for Android, IOS or Windows</p>
             <div class="store-links">
                 <a href="#" class="store-btn google">
-                    <img src="assets/google-play.png" alt="Google Play"> Google Play
+                    <i class="fab fa-google-play"></i> Google Play
                 </a>
                 <a href="#" class="store-btn apple">
-                    <img src="assets/app-store.png" alt="App Store"> App Store
+                    <i class="fab fa-apple"></i> App Store
                 </a>
                 <a href="#" class="store-btn microsoft">
-                    <img src="assets/microsoft-store.png" alt="Microsoft Store"> Microsoft Store
+                    <i class="fab fa-windows"></i> Microsoft Store
                 </a>
             </div>
         </section>
@@ -41,14 +45,17 @@
             <h2>Why Apex?</h2>
             <div class="features">
                 <div class="feature-card">
+                    <i class="fas fa-th-large feature-icon"></i>
                     <h3>Extensive Catalog</h3>
                     <p>Thousands of genuine, OEM-equivalent parts!</p>
                 </div>
                 <div class="feature-card">
+                    <i class="fas fa-map-marker-alt feature-icon"></i>
                     <h3>Real-Time Tracking</h3>
                     <p>Order status & nationwide delivery updates.</p>
                 </div>
                 <div class="feature-card">
+                    <i class="fas fa-undo feature-icon"></i>
                     <h3>Hassle-Free Returns</h3>
                     <p>36-day policy, right from your phone.</p>
                 </div>
@@ -59,7 +66,7 @@
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Apex Auto Components | Made in South Africa</p>
-        <div class="social-links">
+        <div class="footer-links">
             <a href="#">Twitter</a>
             <a href="#">Facebook</a>
             <a href="#">LinkedIn</a>
