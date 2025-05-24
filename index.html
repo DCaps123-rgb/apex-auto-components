@@ -1,55 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex Auto Components</title>
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Auto Components</title>
+  <script src="https://kit.fontawesome.com/34ef1c243f.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 i {
+      margin-right: 10px;
+    }
+
+    .features {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .feature {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 200px;
+    }
+
+    .feature i {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #ff6600;
+    }
+  </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="navbar">
-            <div class="logo-container">
-                <img src="assets/logo.png" alt="Apex Auto Components" class="logo">
-                <div class="menu-icon"><i class="fas fa-bars"></i></div>
-            </div>
-            <a href="#" class="auth-link">Sign In / Register</a>
-        </nav>
-    </header>
-    <!-- Hero Section -->
-    <main>
-        <section class="hero">
-            <h1>Get the Official Apex Auto Components App</h1>
-            <p class="subheading">Download for Android, IOS or Windows</p>
-            <div class="store-links">
-                <a href="#" class="store-btn google"><i class="fab fa-google-play"></i> Google Play</a>
-                <a href="#" class="store-btn apple"><i class="fab fa-apple"></i> App Store</a>
-                <a href="#" class="store-btn microsoft"><i class="fab fa-windows"></i> Microsoft Store</a>
-            </div>
-        </section>
-        <!-- Why Apex Section -->
-        <section class="why-apex">
-            <h2>Why Apex?</h2>
-            <div class="features">
-                <div class="feature-card"><i class="fas fa-th-large feature-icon"></i><h3>Extensive Catalog</h3><p>Thousands of genuine, OEM-equivalent parts!</p></div>
-                <div class="feature-card"><i class="fas fa-map-marker-alt feature-icon"></i><h3>Real-Time Tracking</h3><p>Order status & nationwide delivery updates.</p></div>
-                <div class="feature-card"><i class="fas fa-undo feature-icon"></i><h3>Hassle-Free Returns</h3><p>36-day policy, right from your phone.</p></div>
-            </div>
-        </section>
-    </main>
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Apex Auto Components | Made in South Africa</p>
-        <div class="footer-links">
-            <a href="#">Twitter</a>
-            <a href="#">Facebook</a>
-            <a href="#">LinkedIn</a>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+
+  <header>
+    <h1><i class="fas fa-car"></i> Apex Auto Components</h1>
+    <p>Your one-stop shop for genuine & aftermarket spares</p>
+  </header>
+
+  <div class="features">
+    <div class="feature">
+      <i class="fas fa-search"></i>
+      <p>Search Parts</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-cogs"></i>
+      <p>OEM & Aftermarket</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-truck-fast"></i>
+      <p>Fast Delivery</p>
+    </div>
+  </div>
+
 </body>
 </html>
+
