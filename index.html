@@ -5,69 +5,180 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apex Auto Components</title>
   <script src="https://kit.fontawesome.com/34ef1c243f.js" crossorigin="anonymous"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apex Auto Components</title>
+  <script src="https://kit.fontawesome.com/34ef1c243f.js" crossorigin="anonymous"></script>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 20px;
-      background-color: #f8f8f8;
-    }
-
-    header {
-      background-color: #222;
-      color: white;
-      padding: 20px;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #001f2f;
+      color: #ffffff;
       text-align: center;
     }
 
-    h1 i {
-      margin-right: 10px;
+    header {
+      padding: 20px;
+      position: relative;
+    }
+
+    header .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #00ffff;
+    }
+
+    header .auth {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 1rem;
+    }
+
+    .download-buttons {
+      margin: 30px auto;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .download-buttons a {
+      background: transparent;
+      border: 1px solid #00ffff;
+      color: #00ffff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
     .features {
       display: flex;
-      gap: 20px;
       justify-content: center;
-      margin-top: 30px;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 40px 0;
     }
 
-    .feature {
-      background: white;
+    .feature-box {
+      background: #002b3d;
+      border: 1px solid #00ffff55;
+      border-radius: 10px;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-      width: 200px;
+      width: 250px;
     }
 
-    .feature i {
-      font-size: 2rem;
-      margin-bottom: 10px;
-      color: #ff6600;
+    footer {
+      background-color: #000;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #00ffff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .social-icons i {
+      margin: 0 10px;
+      color: #00ffff;
+    }
+
+    .subscribe-box {
+      margin-top: 10px;
+    }
+
+    .subscribe-box input {
+      padding: 5px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .subscribe-box button {
+      padding: 5px 10px;
+      margin-left: 5px;
+      background-color: #00ffff;
+      border: none;
+      color: #001f2f;
+      border-radius: 4px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1><i class="fas fa-car"></i> Apex Auto Components</h1>
-    <p>Your one-stop shop for genuine & aftermarket spares</p>
+    <div class="logo"><i class="fas fa-car-side"></i> APEX AUTO COMPONENTS</div>
+    <div class="auth"><a href="#">Sign In / Register</a></div>
   </header>
 
+  <h2>Get the Official Apex Auto Components App</h2>
+  <p>Download for Android, iOS or Windows</p>
+
+  <div class="download-buttons">
+    <a href="#"><i class="fab fa-google-play"></i> Google Play</a>
+    <a href="#"><i class="fab fa-apple"></i> App Store</a>
+    <a href="#"><i class="fab fa-windows"></i> Microsoft Store</a>
+  </div>
+
   <div class="features">
-    <div class="feature">
-      <i class="fas fa-search"></i>
-      <p>Search Parts</p>
+    <div class="feature-box">
+      <i class="fas fa-th"></i>
+      <h3>Extensive Catalog</h3>
+      <p>Thousands of genuine, OEM-equivalent items</p>
     </div>
-    <div class="feature">
-      <i class="fas fa-cogs"></i>
-      <p>OEM & Aftermarket</p>
+    <div class="feature-box">
+      <i class="fas fa-shipping-fast"></i>
+      <h3>Real-Time Tracking</h3>
+      <p>Order status & nationwide updates</p>
     </div>
-    <div class="feature">
-      <i class="fas fa-truck-fast"></i>
-      <p>Fast Delivery</p>
+    <div class="feature-box">
+      <i class="fas fa-undo-alt"></i>
+      <h3>Hassle-Free Returns</h3>
+      <p>30-day return policy, right from your phone</p>
     </div>
   </div>
+
+  <footer>
+    <div>Secure SSL Checkout • 30-Day Hassle-Free Returns • 48-Hour Support</div>
+    <div class="footer-links">
+      <div>
+        <strong>Quick Links:</strong>
+        <a href="#">About</a> | <a href="#">Contact Us</a> | <a href="#">FAQ</a>
+      </div>
+      <div>
+        <strong>Legal:</strong>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms</a>
+      </div>
+      <div class="subscribe-box">
+        <input type="email" placeholder="you@domain.com" />
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <div class="social-icons" style="margin-top: 20px;">
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-linkedin-in"></i>
+    </div>
+    <p style="margin-top: 20px;">© 2025 Apex Auto Components | Made in South Africa</p>
+  </footer>
 
 </body>
 </html>
