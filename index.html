@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Auto Components</title>
+  <script src="https://kit.fontawesome.com/34ef1c243f.js" crossorigin="anonymous"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Apex Auto Components</title>
@@ -18,28 +25,18 @@
     header {
       padding: 20px;
       position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
 
     header .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    header .logo img {
-      height: 50px;
-    }
-
-    header .logo span {
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: bold;
       color: #00ffff;
     }
 
     header .auth {
+      position: absolute;
+      right: 20px;
+      top: 20px;
       font-size: 1rem;
     }
 
@@ -51,13 +48,16 @@
       flex-wrap: wrap;
     }
 
-    .download-buttons a img {
-      height: 50px;
-      transition: transform 0.2s ease;
-    }
-
-    .download-buttons a img:hover {
-      transform: scale(1.05);
+    .download-buttons a {
+      background: transparent;
+      border: 1px solid #00ffff;
+      color: #00ffff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
     .features {
@@ -124,23 +124,21 @@
 </head>
 <body>
 
-  <!-- HEADER WITH LOGO -->
   <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="Apex Auto Logo">
-      <span>APEX AUTO COMPONENTS</span>
-    </div>
-    <div class="auth"><a href="#">Sign In / Register</a></div>
+    <div class="logo"><i class="fas fa-car-side"></i> APEX AUTO COMPONENTS</div>
+    <div class="auth">
+  <button onclick="handleLogin()">Sign In / Register</button>
+</div>
+
   </header>
 
   <h2>Get the Official Apex Auto Components App</h2>
   <p>Download for Android, iOS or Windows</p>
 
-  <!-- STORE BUTTONS -->
   <div class="download-buttons">
-    <a href="#"><img src="images/google-play.png" alt="Google Play"></a>
-    <a href="#"><img src="images/app-store.png" alt="App Store"></a>
-    <a href="#"><img src="images/microsoft-store.png" alt="Microsoft Store"></a>
+    <a href="#"><i class="fab fa-google-play"></i> Google Play</a>
+    <a href="#"><i class="fab fa-apple"></i> App Store</a>
+    <a href="#"><i class="fab fa-windows"></i> Microsoft Store</a>
   </div>
 
   <div class="features">
@@ -184,6 +182,15 @@
     </div>
     <p style="margin-top: 20px;">© 2025 Apex Auto Components | Made in South Africa</p>
   </footer>
+<script>
+  function handleLogin() {
+    // Example: redirect to login page
+    window.location.href = "login.html"; // Replace with actual login page link
+
+    // OR use modal later if you want popup login
+    // alert("Login Modal Coming Soon!");
+  }
+</script>
 
 </body>
 </html>

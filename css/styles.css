@@ -119,3 +119,20 @@ footer a {
 footer a:hover {
     color: #00bcd4;
 }
+
+.auth button {
+  background-color: #00ffff;
+  color: #001f2f;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth button:hover {
+  background-color: #00cccc;
+}
+
